@@ -15,7 +15,7 @@ while ($posts->have_posts()) {
     $wpdb->update(
         $tableName,
         array(
-            'guid' => 'http://novi.rkgeronimo.hr/?p='.$id,
+            'guid' => 'http://local.geronimo/?p='.$id,
             'post_name' => $id,
         ),
         array( 'ID' => $id )
